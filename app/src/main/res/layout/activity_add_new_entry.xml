@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNewEntryActivity">
+    <EditText
+        android:id="@+id/newEntryTitle"
+        android:hint="Give title to your entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/writeEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newEntryTitle"
+        android:layout_marginTop="20dp"
+        android:hint="Write your new Entry"/>
+    <EditText
+        android:id="@+id/placeEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/writeEntry"
+        android:layout_marginTop="20dp"
+        android:hint="Write the location here"/>
+
+    <TextView
+        android:id="@+id/newEntryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Select date"
+        android:textSize="24dp"
+        android:layout_below="@+id/placeEntry"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/isWorkCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newEntryDate"
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:text="It was work?" />
+    <Button
+        android:id="@+id/setGPSCoordinates"
+        android:layout_width="140dp"
+        android:layout_below="@+id/isWorkCheck"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Set GPS coordination"
+        />
+    <TextView
+        android:id="@+id/GPSCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="GPS coordinates"
+        android:textSize="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/isWorkCheck"
+        android:layout_marginTop="40sp"
+       />
+        />
+    <Button
+        android:id="@+id/SaveNewEntryButton"
+        android:layout_width="87dp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/setGPSCoordinates"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Save Entry" />
+</RelativeLayout>

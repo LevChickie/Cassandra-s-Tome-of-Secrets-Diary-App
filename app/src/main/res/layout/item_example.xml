@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/titleOfEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/dateOfEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:textStyle="italic"/>
+        <TextView
+            android:id="@+id/descriptionOfEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleOfEntry"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/placeOfEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/descriptionOfEntry"/>
+        <CheckBox
+            android:id="@+id/ifWorkEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptionOfEntry"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text=": is work"/>
+        <TextView
+            android:id="@+id/GPSCoordinateOfEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ifWorkEntry"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

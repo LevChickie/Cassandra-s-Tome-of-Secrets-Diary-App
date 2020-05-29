@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Sign in" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password required"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonNextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login to Diary" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/tome_of_secrets"/>
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignRight="@+id/loginImage"
+        android:layout_alignLeft="@+id/loginImage"
+        android:text="Welcome to Cassandra's Tomes of Secret Diary App" />
+</RelativeLayout>
+</LinearLayout>
